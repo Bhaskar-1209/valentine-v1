@@ -247,7 +247,7 @@ const [wrongMsg, setWrongMsg] = useState("");
           <p>Main words mein nahi bata sakta ki aap meri life me kitne important person ho.</p>
           <p>Mere lyi Ta Tuhi Sabh Kuj Aa, Tere Wrga Hor Hona Ni !!</p>
           <p>Lkha Sohne Chehre Ne Dunia Te, Par Tere Nalo Sohna Ni..❤️🪬</p>
-          <p>Love you bhor sara meri bugadi🫂❤️</p>
+          <p>Love you bhot sara meri bugadi🫂❤️</p>
           <p className="font-black text-red-500 text-2xl mt-10">Forever Yours, <br/> Your Love ❤️</p>
         </div>
       </div>
