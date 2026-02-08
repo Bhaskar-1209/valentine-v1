@@ -245,7 +245,8 @@ const [wrongMsg, setWrongMsg] = useState("");
         <h2 className="text-3xl font-black text-red-600 mb-6">Mere Pyaare Bche 🐢,</h2>
         <div className="space-y-6 text-gray-700 font-medium leading-relaxed italic text-lg">
           <p>Main words mein nahi bata sakta ki aap meri life me kitne important person ho.</p>
-          <p>Bhagwan ji ne merko ek itna pyara bcha diya hai, jo mera lucky charm bna h apke life me aane se meri life me bhot badal gayi hai.</p>
+          <p>Mere lyi Ta Tuhi Sabh Kuj Aa, Tere Wrga Hor Hona Ni !!</p>
+          <p>Lkha Sohne Chehre Ne Dunia Te, Par Tere Nalo Sohna Ni..❤️🪬</p>
           <p>Love you bhor sara meri bugadi🫂❤️</p>
           <p className="font-black text-red-500 text-2xl mt-10">Forever Yours, <br/> Your Love ❤️</p>
         </div>
