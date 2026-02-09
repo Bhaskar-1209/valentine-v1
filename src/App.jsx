@@ -237,33 +237,109 @@ const [wrongMsg, setWrongMsg] = useState("");
   );
 
   // 4. Love Letter Gift Page
-  const LetterPage = () => (
+  // const LetterPage = () => (
+  //   <div className="min-h-screen bg-red-50 flex flex-col items-center p-6 text-center animate-in slide-in-from-right duration-500 overflow-y-auto">
+  //     <button onClick={() => setPage('selection')} className="absolute top-6 left-6 flex items-center gap-2 font-bold text-red-600 z-20 hover:scale-105"><ArrowLeft /> Back</button>
+  //     <div className="max-w-xl w-full mt-20 bg-white p-10 rounded-[3rem] border-4 border-red-300 shadow-2xl text-left relative overflow-hidden">
+  //       <Heart className="absolute -bottom-10 -right-10 w-40 h-40 text-red-50 opacity-50" fill="currentColor" />
+  //       <h2 className="text-3xl font-black text-red-600 mb-6">Mere Pyaare Bche 🐢,</h2>
+  //       <div className="space-y-6 text-gray-700 font-medium leading-relaxed italic text-lg">
+  //         <p>Main words mein nahi bata sakta ki aap meri life me kitne important person ho.</p>
+  //         <p>Mere lyi Ta Tuhi Sabh Kuj Aa, Tere Wrga Hor Hona Ni !!</p>
+  //         <p>Lkha Sohne Chehre Ne Dunia Te, Par Tere Nalo Sohna Ni..❤️🪬</p>
+  //         <p>Love you bhot sara meri bugadi🫂❤️</p>
+  //         <p className="font-black text-red-500 text-2xl mt-10">Forever Yours, <br/> Your Love ❤️</p>
+  //       </div>
+  //     </div>
+      
+  //     {/* AI Memory Generator Section */}
+  //     <div className="mt-8 max-w-xl w-full bg-white p-6 rounded-3xl border-2 border-pink-100 shadow-lg animate-in fade-in delay-500">
+  //       <p className="text-pink-600 font-bold mb-4 flex items-center justify-center gap-2"><Sparkles className="w-4 h-4" /> Magic Memory Generator <Sparkles className="w-4 h-4" /></p>
+  //       <div className="p-4 bg-red-50 rounded-xl italic text-gray-700 mb-4 min-h-[60px] flex items-center justify-center">
+  //         {loadingAi ? (
+  //           <div className="flex gap-1">
+  //             <span className="w-2 h-2 bg-pink-400 rounded-full animate-bounce"></span>
+  //             <span className="w-2 h-2 bg-pink-400 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+  //           </div>
+  //         ) : (aiNote || "Click below for a fresh reason why I love you!")}
+  //       </div>
+  //       <button onClick={generateAiLoveNote} className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-pink-600 transition-all active:scale-95 shadow-md">
+  //         Generate New Reason
+  //       </button>
+  //     </div>
+  //   </div>
+  // );
+    const LetterPage = () => (
     <div className="min-h-screen bg-red-50 flex flex-col items-center p-6 text-center animate-in slide-in-from-right duration-500 overflow-y-auto">
-      <button onClick={() => setPage('selection')} className="absolute top-6 left-6 flex items-center gap-2 font-bold text-red-600 z-20 hover:scale-105"><ArrowLeft /> Back</button>
+      <button
+        onClick={() => setPage("selection")}
+        className="absolute top-6 left-6 flex items-center gap-2 font-bold text-red-600 z-20 hover:scale-105"
+      >
+        <ArrowLeft /> Back
+      </button>
       <div className="max-w-xl w-full mt-20 bg-white p-10 rounded-[3rem] border-4 border-red-300 shadow-2xl text-left relative overflow-hidden">
-        <Heart className="absolute -bottom-10 -right-10 w-40 h-40 text-red-50 opacity-50" fill="currentColor" />
-        <h2 className="text-3xl font-black text-red-600 mb-6">Mere Pyaare Bche 🐢,</h2>
+        <Heart
+          className="absolute -bottom-10 -right-10 w-40 h-40 text-red-50 opacity-50"
+          fill="currentColor"
+        />
+        <h2 className="text-3xl font-black text-red-600 mb-6">
+          My Dearest Love,
+        </h2>
+
         <div className="space-y-6 text-gray-700 font-medium leading-relaxed italic text-lg">
-          <p>Main words mein nahi bata sakta ki aap meri life me kitne important person ho.</p>
-          <p>Mere lyi Ta Tuhi Sabh Kuj Aa, Tere Wrga Hor Hona Ni !!</p>
-          <p>Lkha Sohne Chehre Ne Dunia Te, Par Tere Nalo Sohna Ni..❤️🪬</p>
-          <p>Love you bhot sara meri bugadi🫂❤️</p>
-          <p className="font-black text-red-500 text-2xl mt-10">Forever Yours, <br/> Your Love ❤️</p>
+          <p>
+            I may never find enough words to truly explain how important you are
+            to me, but my heart knows it every single moment.
+          </p>
+
+          <p>
+            You are my home, my peace, my safe place, and my greatest blessing.
+            In a world full of noise, you are my calm.
+          </p>
+
+          <p>
+            There may be countless beautiful faces in this world, but none of
+            them carry the beauty of your soul, your smile, and your heart. ❤️🪬
+          </p>
+
+          <p>
+            Loving you feels easy, natural, and meant to be. Every laugh we
+            share and every moment with you makes my life brighter and more
+            meaningful.
+          </p>
+
+          <p>
+            I love you endlessly, my beautiful chaos, my forever person, my
+            everything. 🫂❤️
+          </p>
+
+          <p className="font-black text-red-500 text-2xl mt-10">
+            Forever Yours, <br />
+            Your Love ❤️
+          </p>
         </div>
       </div>
-      
+
       {/* AI Memory Generator Section */}
       <div className="mt-8 max-w-xl w-full bg-white p-6 rounded-3xl border-2 border-pink-100 shadow-lg animate-in fade-in delay-500">
-        <p className="text-pink-600 font-bold mb-4 flex items-center justify-center gap-2"><Sparkles className="w-4 h-4" /> Magic Memory Generator <Sparkles className="w-4 h-4" /></p>
+        <p className="text-pink-600 font-bold mb-4 flex items-center justify-center gap-2">
+          <Sparkles className="w-4 h-4" /> Magic Memory Generator{" "}
+          <Sparkles className="w-4 h-4" />
+        </p>
         <div className="p-4 bg-red-50 rounded-xl italic text-gray-700 mb-4 min-h-[60px] flex items-center justify-center">
           {loadingAi ? (
             <div className="flex gap-1">
               <span className="w-2 h-2 bg-pink-400 rounded-full animate-bounce"></span>
               <span className="w-2 h-2 bg-pink-400 rounded-full animate-bounce [animation-delay:0.2s]"></span>
             </div>
-          ) : (aiNote || "Click below for a fresh reason why I love you!")}
+          ) : (
+            aiNote || "Click below for a fresh reason why I love you!"
+          )}
         </div>
-        <button onClick={generateAiLoveNote} className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-pink-600 transition-all active:scale-95 shadow-md">
+        <button
+          onClick={generateAiLoveNote}
+          className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-pink-600 transition-all active:scale-95 shadow-md"
+        >
           Generate New Reason
         </button>
       </div>
